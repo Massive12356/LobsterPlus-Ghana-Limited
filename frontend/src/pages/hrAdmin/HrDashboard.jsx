@@ -71,7 +71,7 @@ const HrDashboard = () => {
       {/* Top Nav */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-bold text-blue-800">
-          HR Attendance Dashboard
+          PRODUCT DETAILS PAGE
         </h1>
         {/* Power Icon Logout */}
         <FiPower
