@@ -3,8 +3,10 @@ import { lazy, Suspense } from 'react';
 import './App.css'
 import {Toaster} from 'react-hot-toast'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics";
 import Loading from './components/LazyLoads/Loading';
 import HrDashboard from './pages/hrAdmin/HrDashboard';
+
 
 // public Routes components
 const Login = lazy(()=> import('./components/Login'))
@@ -65,6 +67,7 @@ function App() {
           </Routes>
         </Suspense>
       </BrowserRouter>
+      <Analytics/>
     </>
   );
 }
